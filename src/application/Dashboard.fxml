@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+   <children>
+      <Label alignment="CENTER" layoutX="62.0" layoutY="18.0" prefHeight="17.0" prefWidth="478.0" text="I am thinking of a number between 1-100" textFill="#e30909">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="214.0" layoutY="54.0" prefHeight="26.0" prefWidth="173.0" text="Can you Guess it">
+         <font>
+            <Font name="Bell MT" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputNumber" layoutX="214.0" layoutY="91.0" prefHeight="37.0" prefWidth="187.0" promptText="Guess My Number" />
+      <Button fx:id="btnGuess" layoutX="215.0" layoutY="149.0" mnemonicParsing="false" onAction="#GuessMyNumber" prefHeight="25.0" prefWidth="86.0" text="Guess" />
+      <Label fx:id="hint" alignment="CENTER" layoutX="19.0" layoutY="192.0" prefHeight="25.0" prefWidth="565.0" text="Hint" textFill="#f50b0b" />
+      <Label fx:id="hint1" layoutX="34.0" layoutY="310.0" text="Guess Number:" />
+      <Label fx:id="hint11" layoutX="34.0" layoutY="347.0" text="hints:" />
+      <Label fx:id="guessNumbers" layoutX="125.0" layoutY="312.0" prefHeight="17.0" prefWidth="457.0" />
+      <Label fx:id="hintsSigns" layoutX="125.0" layoutY="346.0" prefHeight="17.0" prefWidth="457.0" />
+      <Label fx:id="hint13" layoutX="137.0" layoutY="247.0" prefHeight="17.0" prefWidth="101.0" text="Total Guesses:" />
+      <Label fx:id="count" layoutX="251.0" layoutY="247.0" text="0" />
+      <Button layoutX="311.0" layoutY="149.0" mnemonicParsing="false" onAction="#GameRest" prefHeight="25.0" prefWidth="86.0" text="Rest" />
+   </children>
+</AnchorPane>
